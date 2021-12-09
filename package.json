@@ -1,0 +1,14 @@
+{
+  "name": "reminderbot",
+  "version": "1.0.0",
+  "description": "A discord bot that creates reminders and checklists for general use. Reminders are based on time.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthony and Jason",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.3.1"
+  }
+}
