@@ -30,4 +30,4 @@ client.on('messageCreate', message => {
     if(command === 'bing')
         client.commands.get('bing').execute(message,args);
 });
-client.login('OTE4MzYyNzQ4NjY3MTc5MDIw.YbGJ9Q.PN59klxEGbJQfIS5AUvdLD3cFDU');
+client.login('');
