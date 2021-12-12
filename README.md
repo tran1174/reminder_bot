@@ -11,7 +11,6 @@ r!editreminder
 
 r!
 
-
 reminder database structure:
 	user
 	reminder_id
