@@ -1,13 +1,11 @@
-const { Client, Intents, DiscordAPIError } = require ('discord.js');
-const Discord = require ('discord.js');
-
+const { Client, Intents, DiscordAPIError, Collection } = require ('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
-
+const { token } = require('./config.json');
 const prefix = 'r!';
 
 const fs = require('fs');
 
-client.commands = new Discord.Collection();
+client.commands = new Collection();
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles)
@@ -30,4 +28,4 @@ client.on('messageCreate', message => {
     if(command === 'bing')
         client.commands.get('bing').execute(message,args);
 });
-client.login('');
+client.login(token);
